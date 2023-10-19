@@ -69,17 +69,34 @@
         while (have_posts()):
           the_post() // The : are used instead of the curly brackets ?>
 
-            <?php the_content();
-            endwhile; 
-          endif;
-            ?>
+          <h2>
+            <a href="<?php the_permalink(); ?>">
+            <?php the_title(); ?>
+            </a>
+            
+          </h2>
+
+          <small>
+          <?php the_date() ?> by <?php the_author_posts_link() ?>
+        </small>
 
         <p>
           <?php //the_content();//
-          // the_excerpt();
-          ?>
+          the_excerpt();?>
         </p>
 
+        <?php endwhile;
+              the_posts_pagination(array(
+                'mid_size' => 1,
+                'prev_text' => "Older",
+                'next_text' => "Newer"
+              )); //shows the pagination | mid_size controls how many other paginations are shown on both sides
+        ?>
+
+      <? else:
+      echo "<p>Sorry, no posts found.</p>";
+      endif;
+       ?>
     </div>
     <div class="col4">
       <!-- Prepped for Sidebar -->
@@ -90,4 +107,4 @@
 
 
 
-<?php get_footer(); ?>
+<?php get_footer() ?>
