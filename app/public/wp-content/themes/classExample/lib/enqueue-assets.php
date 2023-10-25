@@ -3,7 +3,7 @@
 function classExample_assets(){
     wp_enqueue_style(
         'classExample-stylesheet',
-        get_template_directory_url().'/assets/css/style.css',
+        get_template_directory_uri().'/assets/css/style.css',
         array(),
         '1.0.0',
         'all'
@@ -11,7 +11,7 @@ function classExample_assets(){
 
     wp_enqueue_style(
         'classExample-stylesheet',
-        get_template_directory_url().'/assets/css/wpcore.css',
+        get_template_directory_uri().'/assets/css/wpcore.css',
         array(),
         '1.0.0',
         'all'
@@ -19,7 +19,7 @@ function classExample_assets(){
 
     wp_enqueue_style(
         'classExample-stylesheet',
-        get_template_directory_url().'/assets/css/bootstrap.css',
+        get_template_directory_uri().'/assets/css/bootstrap.css',
         array(),
         '1.0.0',
         'all'
@@ -27,7 +27,7 @@ function classExample_assets(){
 
     wp_enqueue_script(
         'classExample_bs_script',
-        get_template_directory_url().'/assets/js/bootstrap.js',
+        get_template_directory_uri().'/assets/js/bootstrap.js',
         array(),
         '1.0.0',
         true
