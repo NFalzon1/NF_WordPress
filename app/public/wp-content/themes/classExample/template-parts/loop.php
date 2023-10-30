@@ -16,8 +16,8 @@ $args = array('section_title' => 'Home');
         <?php endwhile;
               the_posts_pagination(array(
                 'mid_size' => 1,
-                'prev_text' => "Older",
-                'next_text' => "Newer"
+                'prev_text' => "Newer",
+                'next_text' => "Older"
               )); //shows the pagination | mid_size controls how many other paginations are shown on both sides
         ?>
 

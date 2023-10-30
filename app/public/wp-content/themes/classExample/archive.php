@@ -11,6 +11,13 @@
     ?>
     <div class="col-4">
       <h4>More from this author</h4>
+
+      <?php
+
+    $args = array('section_title' => 'Archive');
+    get_template_part("template-parts/archiveLoop", null, $args);
+
+    ?>
     </div>
   </div>
 </div>
