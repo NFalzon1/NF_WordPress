@@ -30,7 +30,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col">
-      <nav id="class_example-main-footer">
+      <nav id="class_example-main-header">
         <?php
           wp_nav_menu( array(
             'theme_location'=> 'main-menu',

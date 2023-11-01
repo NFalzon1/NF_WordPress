@@ -17,6 +17,7 @@
     $args = array('section_title' => 'Archive');
     get_template_part("template-parts/archiveLoop", null, $args);
 
+    get_sidebar('second');
     ?>
     </div>
   </div>
