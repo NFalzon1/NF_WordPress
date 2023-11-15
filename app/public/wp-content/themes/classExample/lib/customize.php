@@ -1,4 +1,4 @@
-4<?php 
+<?php 
 
 function custom_customize_register($wp_customize){
     $wp_customize->add_section('custom_footer_options', array(
